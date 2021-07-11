@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    tools:context=".ui.fragment.health.BMIFragment">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvCanNang"
+            app:cardElevation="1sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="4sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_marginTop="15sp"
+                    android:text="Cân nặng:"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:textColor="@color/text_gray_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="90sp"
+                    android:layout_height="90sp"
+                    android:layout_marginBottom="15sp"
+                    android:layout_marginTop="10sp"
+                    android:src="@drawable/scale"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv1"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="13sp"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/im1"
+                    app:layout_constraintEnd_toEndOf="@id/im1"
+                    app:layout_constraintStart_toStartOf="@id/im1">
+
+                    <EditText
+                        android:layout_width="30sp"
+                        android:textSize="18sp"
+                        android:textColor="@color/text_gray_black"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kg"
+                        android:textColor="@color/text_gray_black"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvChieuCao"
+            app:cardElevation="1sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="8sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginTop="25sp"
+                    android:text="Chiều cao:"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/edt1"
+                    android:layout_marginLeft="3sp"
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toEndOf="@+id/tv2"
+                    app:layout_constraintBottom_toTopOf="@id/imHeaight" />
+            <TextView
+                android:id="@+id/tv3"
+                app:layout_constraintStart_toEndOf="@+id/edt1"
+                app:layout_constraintBottom_toTopOf="@id/imHeaight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray_black"
+                android:textSize="18sp"
+                android:text="cm"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/imHeaight"
+                    android:layout_width="match_parent"
+                    android:layout_height="99sp"
+                    android:layout_marginTop="7sp"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:background="@drawable/height"
+                    app:layout_constraintTop_toBottomOf="@+id/tv2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:background="@color/background">
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="BMI của bạn là:"
+            android:layout_marginTop="10sp"
+            android:textColor="@color/text_gray_black"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imBMI"
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:src="@drawable/im9"
+            android:layout_marginTop="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv4"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/tv5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.5"
+            android:textColor="@color/text_gray_black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/imBMI"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv5"
+            app:layout_constraintStart_toStartOf="parent" >
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m1"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Cực kỳ nhẹ cân"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="16.0"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/im2"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Rất nhẹ cân"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="16.0 - 16.9"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m3"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Nhẹ cân"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="17.0 - 18.4"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m4"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Bình thường"
+                    android:textColor="@color/text_gray_black"/>
+
+                <TextView
+                    android:layout_width="90sp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="18.5 - 24.0"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m5"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Thừa cân"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="25.5 - 29.9"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m6"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Béo phì loại I"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="30.0 - 34.9"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m7"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Béo phì loại II"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="35.0 - 39.9"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10sp"
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4sp"
+                    android:src="@drawable/m8"
+                    />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_width="120sp"
+                    android:layout_height="wrap_content"
+                    android:text="Béo phì loại III"
+                    android:textColor="@color/text_gray_black"/>
+                <TextView
+                    android:layout_width="90sp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text=">40.0"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_gray_black"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:textSize="16sp"
+        android:text="Lưu lại"
+        android:gravity="center"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center"
+        android:background="@drawable/button_green"
+        android:textAllCaps="false"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8sp"
+    android:background="@color/background"
+    android:layout_marginTop="10sp"
+    android:layout_marginRight="8sp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lịch sử thay đổi"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="8sp"
+        android:textColor="@color/text_gray_black"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+</LinearLayout>
+</LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.upharma_app.ui.fragment.HomeFragment"
+        android:label="Upharma" >
+        <action
+            android:id="@+id/action_homeFragment_to_healthDeviceFragment"
+            app:destination="@id/healthDeviceFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_liveHealthFragment"
+            app:destination="@id/liveHealthFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_medicineFragment"
+            app:destination="@id/medicineFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_diaryHealthFragment"
+            app:destination="@id/diaryHealthFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_medicineFragment2"
+            app:destination="@id/medicineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.example.upharma_app.ui.fragment.account.AccountFragment"
+        android:label="Tài khoản"
+        tools:layout="@layout/account_fragment" >
+        <action
+            android:id="@+id/action_nav_account_to_relativeFragment"
+            app:destination="@id/relativeFragment" />
+        <action
+            android:id="@+id/action_nav_account_to_drugstoreOnlineFragment"
+            app:destination="@id/drugstoreOnlineFragment" />
+        <action
+            android:id="@+id/action_nav_account_to_medicalRecordFragment"
+            app:destination="@id/medicalRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_notify"
+        android:name="com.example.upharma_app.ui.fragment.NotifyFragment"
+        android:label="Thông báo"
+        tools:layout="@layout/notify_fragment" />
+    <fragment
+        android:id="@+id/nav_support"
+        android:name="com.example.upharma_app.ui.fragment.support.SupportFragment"
+        android:label="Hỗ trợ"
+        tools:layout="@layout/support_fragment" />
+    <fragment
+        android:id="@+id/healthDeviceFragment"
+        android:name="com.example.upharma_app.ui.fragment.health.HealthDeviceFragment"
+        android:label="Sức khỏe"
+        tools:layout="@layout/health_device_fragment">
+        <action
+            android:id="@+id/action_healthDeviceFragment_to_bloodSugarFragment"
+            app:destination="@id/bloodSugarFragment" />
+        <action
+            android:id="@+id/action_healthDeviceFragment_to_heartFragment"
+            app:destination="@id/heartFragment" />
+        <action
+            android:id="@+id/action_healthDeviceFragment_to_BMIFragment"
+            app:destination="@id/BMIFragment" />
+        <action
+            android:id="@+id/action_healthDeviceFragment_to_bloodPressureFragment"
+            app:destination="@id/bloodPressureFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diaryHealthFragment"
+        android:name="com.example.upharma_app.ui.fragment.diaryhealth.DiaryHealthFragment"
+        android:label="Nhật ký sức khỏe"
+        tools:layout="@layout/diary_health_fragment" />
+    <fragment
+        android:id="@+id/liveHealthFragment"
+        android:name="com.example.upharma_app.ui.fragment.livehealthy.LiveHealthFragment"
+        android:label="Bí kíp sống khoẻ"
+        tools:layout="@layout/live_health_fragment" />
+    <fragment
+        android:id="@+id/medicineFragment"
+        android:name="com.example.upharma_app.ui.fragment.medicine.MedicineFragment"
+        android:label="Đơn thuốc"
+        tools:layout="@layout/medicine_fragment">
+        <action
+            android:id="@+id/action_medicineFragment_to_drugstoreOnlineFragment"
+            app:destination="@id/drugstoreOnlineFragment" />
+        <action
+            android:id="@+id/action_medicineFragment_to_prescriptionOnlineFragment"
+            app:destination="@id/prescriptionOnlineFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/drugstoreOnlineFragment"
+        android:name="com.example.upharma_app.ui.fragment.medicine.DrugstoreOnlineFragment"
+        android:label="Nhà thuốc online"
+        tools:layout="@layout/drugstore_online_fragment">
+        <action
+            android:id="@+id/action_drugstoreOnlineFragment_to_medicalInfoFragment"
+            app:destination="@id/medicalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prescriptionOnlineFragment"
+        android:name="com.example.upharma_app.ui.fragment.medicine.PrescriptionOnlineFragment"
+        android:label="Đơn thuốc của tôi"
+        tools:layout="@layout/prescription_online_fragment" />
+    <fragment
+        android:id="@+id/medicalInfoFragment"
+        android:name="com.example.upharma_app.ui.fragment.medicine.MedicalInfoFragment"
+        android:label="Thông tin thuốc"
+        tools:layout="@layout/medical_info_fragment" >
+        <argument
+            android:name="medicine"
+            app:argType="com.example.upharma_app.model.ProductInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/heartFragment"
+        android:name="com.example.upharma_app.ui.fragment.health.HeartFragment"
+        android:label="Nhịp tim" />
+    <fragment
+        android:id="@+id/BMIFragment"
+        android:name="com.example.upharma_app.ui.fragment.health.BMIFragment"
+        android:label="Chiều cao, câng nặng"
+        tools:layout="@layout/b_m_i_fragment" />
+    <fragment
+        android:id="@+id/bloodPressureFragment"
+        android:name="com.example.upharma_app.ui.fragment.health.BloodPressureFragment"
+        android:label="Huyết áp"
+        tools:layout="@layout/blood_pressure_fragment" />
+    <fragment
+        android:id="@+id/bloodSugarFragment"
+        android:name="com.example.upharma_app.ui.fragment.health.BloodSugarFragment"
+        android:label="Đường huyết"
+        tools:layout="@layout/blood_sugar_fragment" />
+    <fragment
+        android:id="@+id/relativeFragment"
+        android:name="com.example.upharma_app.ui.fragment.account.RelativeFragment"
+        android:label="RelativeFragment" />
+    <fragment
+        android:id="@+id/medicalRecordFragment"
+        android:name="com.example.upharma_app.ui.fragment.account.MedicalRecordFragment"
+        android:label="MedicalRecordFragment" />
+</navigation>

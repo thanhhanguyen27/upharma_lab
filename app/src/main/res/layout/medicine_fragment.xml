@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.medicine.MedicineFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/donthuoconline"
+        android:layout_marginTop="20sp"
+        app:cardCornerRadius="5sp"
+        app:cardElevation="1sp"
+        android:elevation="0sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16sp"
+        android:layout_marginLeft="16sp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="40sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/healthcheck"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvDonthuoc"
+                app:layout_constraintStart_toEndOf="@+id/im1"
+                android:layout_marginTop="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10sp"
+                android:textStyle="bold"
+                android:text="Đơn thuốc của tôi"
+                android:textColor="@color/text_gray_black"
+                />
+            <TextView
+                android:layout_marginTop="3sp"
+                android:layout_marginLeft="10sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvDonthuoc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16sp"
+                app:layout_constraintStart_toEndOf="@+id/im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray_black"
+                android:text="Xem tất cả các đơn thuốc của bạn"/>
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="5sp"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="5sp"
+        android:id="@+id/nhathuoc"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="10sp"
+        app:cardElevation="1sp"
+        android:elevation="0sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16sp"
+        android:layout_marginLeft="16sp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="40sp"
+                android:layout_height="60sp"
+                android:layout_marginLeft="10sp"
+                android:src="@drawable/buyonline"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/tvNhathuoc"
+                app:layout_constraintStart_toEndOf="@+id/im2"
+                android:layout_marginTop="16sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_marginLeft="10sp"
+                android:textStyle="bold"
+                android:text="Nhà thuốc online"
+                android:textColor="@color/text_gray_black"
+                />
+            <TextView
+                android:layout_marginTop="3sp"
+                android:layout_marginLeft="10sp"
+                app:layout_constraintTop_toBottomOf="@+id/tvNhathuoc"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="16sp"
+                app:layout_constraintStart_toEndOf="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray_black"
+                android:text="Xem thuốc, khuyến mại"/>
+            <ImageView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginRight="5sp"
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/ic_baseline_navigate_next_24"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</layout>

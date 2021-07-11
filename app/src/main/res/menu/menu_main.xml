@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Trang chủ"
+        app:showAsAction="always"
+        android:contentDescription="Trang chủ"
+        />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/nav_notify"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="Thông báo"
+        android:contentDescription="Thông báo"/>
+    <item
+        android:id="@+id/noVisiable2"
+        android:title="            "
+        android:enabled="false"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/nav_support"
+        android:icon="@drawable/support"
+        android:title="Hỗ trợ"
+        android:contentDescription="Hỗ trợ"
+        />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/nav_account"
+        android:icon="@drawable/account"
+        android:title="Tài khoản"
+        android:contentDescription="Tài khoản"
+        />
+</menu>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<!--    <item-->
+<!--        android:id="@+id/homeFragment"-->
+<!--        android:icon="@drawable/ic_baseline_home_24"-->
+<!--        android:title="Trang chủ" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_notify"-->
+<!--        android:icon="@drawable/ic_baseline_notifications_24"-->
+<!--        android:title="Thông báo" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_QR"-->
+<!--        android:icon="@drawable/qr_code"-->
+<!--        android:title="Quét QR" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_support"-->
+<!--        android:title="Hỗ trợ"-->
+<!--        android:icon="@drawable/support"/>-->
+
+<!--    <item-->
+<!--        android:id="@+id/nav_account"-->
+<!--        android:icon="@drawable/account"-->
+<!--        android:title="Tài khoản" />-->
+
+<!--</menu>-->

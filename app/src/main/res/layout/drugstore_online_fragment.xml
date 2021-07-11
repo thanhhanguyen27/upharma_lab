@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.medicine.DrugstoreOnlineFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_marginTop="15sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <LinearLayout
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_weight="1.5"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pills"
+                    android:background="@drawable/boder_stroke_green"/>
+                <TextView
+                    android:layout_marginTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thực phẩm\nchức năng"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/pills"
+                    android:background="@drawable/boder_stroke_green"/>
+                <TextView
+                    android:layout_marginTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thiết bị y tế"
+                    android:layout_marginBottom="10sp"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="60sp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/giftbox"
+                    android:background="@drawable/boder_stroke_green"/>
+                <TextView
+                    android:layout_marginTop="5sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Khuyến mãi"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                android:background="@color/background_gray"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginLeft="8sp"
+                    android:textColor="@color/text_gray_gray"
+                    android:text="Gợi ý hôm nay"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rclHorizontal"
+                    tools:listitem="@layout/item_medicine"
+                    android:layout_marginTop="10sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="10sp"
+                android:background="@color/background_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:layout_marginTop="4sp"
+                    android:layout_marginLeft="8sp"
+                    android:textColor="@color/text_gray_gray"
+                    android:text="Dành cho bạn"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="10sp"
+                    android:id="@+id/rclVertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_medicine"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    tools:context=".ui.fragment.livehealthy.LiveHealthFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+           <androidx.cardview.widget.CardView
+               android:layout_marginLeft="8sp"
+               android:layout_width="0dp"
+               android:layout_marginRight="4sp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:background="@drawable/yoga"
+               app:cardElevation="0sp"
+               app:cardCornerRadius="8sp">
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+
+                   android:background="@drawable/yoga"
+                   android:layout_height="120sp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                        android:textColor="@color/background"
+                       android:textSize="16sp"
+                       android:background="#50000000"
+                       android:gravity="center"
+                       android:textStyle="bold"
+                       android:text="  Tập luyện \n mỗi ngày"
+                       android:shadowColor="@color/text_gray"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="8sp"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_gray"
+                    app:cardElevation="0sp"
+                    app:cardCornerRadius="8sp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/songkhoe"
+                        android:layout_height="120sp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/background"
+                        android:textSize="16sp"
+                        android:background="#50000000"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="  Bí quyết \n sống khỏe"
+                        android:shadowColor="@color/text_gray"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_marginTop="8sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginLeft="8sp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="4sp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_gray"
+                    app:cardElevation="0sp"
+                    app:cardCornerRadius="8sp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:background="@drawable/dinhduong"
+                        android:layout_height="120sp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/background"
+                            android:textSize="16sp"
+                            android:background="#70000000"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="  Chế độ ăn\ndinh dưỡng"
+                            android:shadowColor="@color/text_gray"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginRight="8sp"
+                    android:layout_width="0dp"
+                    android:layout_marginLeft="4sp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_gray"
+                    app:cardElevation="0sp"
+                    app:cardCornerRadius="8sp">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="120sp"
+                        android:background="@drawable/meohay">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/background"
+                            android:textSize="16sp"
+                            android:background="#60000000"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:text="  Mẹo hay\ntrị bệnh"
+                            android:shadowColor="@color/text_gray"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+<LinearLayout
+    android:layout_marginTop="15sp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="8sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Được đề xuất"
+        android:textSize="17sp"
+        android:textColor="@color/text_gray_gray"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="5sp"
+        android:id="@+id/rclHorizontal"
+        tools:listitem="@layout/item_image_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
+            <LinearLayout
+                android:background="@color/background"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiêu điểm"
+                    android:textSize="16sp"
+                    android:textColor="@color/text_gray_gray"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="5sp"
+                    android:id="@+id/rclVertical"
+                    tools:listitem="@layout/item_article"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

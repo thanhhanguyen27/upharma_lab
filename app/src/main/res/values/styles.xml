@@ -1,0 +1,134 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="textview_user_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="input_info_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">44dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="input_info_edit_text">
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+
+    <style name="textview_device_info">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="textview_device_info_short">
+        <item name="android:layout_width">70dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">start</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+    <style name="textview_medicine_title">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="textview_medicine_title_short">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="title_recyclerview_item">
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="content_text_recycler_item">
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <style name="info_more_lines_layout">
+        <item name="android:background">@color/background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="input_info_title">
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="info_more_lines_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:textColor">@color/text_gray_black</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:gravity">center_vertical|right</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+    <style name="line_program">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+
+</resources>

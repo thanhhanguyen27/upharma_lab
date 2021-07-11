@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.medicine.MedicalInfoFragment">
+
+    <ScrollView
+        android:id="@+id/sc1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ln1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="185sp"
+                    android:src="@drawable/upharma"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="16sp"
+                android:background="@color/background"
+                android:text="Thuốc ho long đờm"
+                android:textColor="@color/text_gray_black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp"
+                android:layout_marginTop="2sp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20.000"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3sp"
+                    android:text="đ/ hộp"
+                    android:textColor="@color/red" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8sp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/group16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="13sp"
+                    android:layout_height="13sp"
+                    android:layout_marginRight="3sp"
+                    android:src="@drawable/share"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvShare"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16sp"
+                    android:text="Chia sẻ"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8sp"
+                android:background="@color/background_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvWarning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginRight="16sp"
+                    android:background="@drawable/border_text_warning"
+                    android:gravity="center"
+                    android:text="Sản phẩm cần mua dưới sự tư vấn của bác sỹ.\nVui lòng liên hệ nhà thuốc."
+                    android:textColor="@color/text_gray_black"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4sp"
+                    android:layout_marginTop="8sp"
+                    android:text="Thông tin sản phẩm"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="16sp"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:text="Quy cách"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ống"
+                        android:textColor="@color/text_gray_black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginRight="16sp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:layout_marginTop="3sp"
+                        android:text="Phân phối"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCompany"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3sp"
+                        android:text="Công ty TNHH dược phẩm VNP"
+                        android:textColor="@color/text_gray_black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1sp"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="6sp"
+                    android:layout_marginRight="16sp"
+                    android:background="@color/text_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="90sp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16sp"
+                        android:text="Sản xuất tại"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvSanxuat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Conpia"
+                        android:textColor="@color/text_gray_black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="16sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_green_light"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:text="Mô tả sản phẩm"
+                        android:textColor="@color/text_gray_black" />
+
+                    <ImageView
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:src="@drawable/next" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/thanhPhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_green_light"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:text="Thành phần"
+                        android:textColor="@color/text_gray_black" />
+
+                    <ImageView
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:src="@drawable/next" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/huongDan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_green_light"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:text="Hướng dẫn sử dụng"
+                        android:textColor="@color/text_gray_black" />
+
+                    <ImageView
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:src="@drawable/next" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/baoQuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16sp"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="16sp"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_green_light"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1.3"
+                        android:text="Bảo quản"
+                        android:textColor="@color/text_gray_black" />
+
+                    <ImageView
+                        android:layout_width="24sp"
+                        android:layout_height="24sp"
+                        android:contentDescription="TODO"
+                        android:src="@drawable/next" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="8sp"
+                    android:layout_marginTop="12sp"
+                    android:background="@color/background_gray" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:text="Đánh giá và nhận xét"
+                    android:textColor="@color/text_gray_black"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginTop="5sp"
+                    android:src="@drawable/group16"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_marginBottom="3sp"
+            android:layout_marginLeft="4sp"
+            android:layout_marginRight="4sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/chat"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:background="@drawable/button_green"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="14sp"
+                    android:layout_height="14sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/chat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chat ngay"
+                    android:textSize="14sp"
+                    android:textColor="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/addBuy"
+                android:layout_marginLeft="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:background="@drawable/button_green"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="14sp"
+                    android:layout_height="14sp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/buyhop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Thêm giỏ hàng"
+                    android:textSize="14sp"
+                    android:textColor="@color/background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="2sp"
+                android:layout_width="wrap_content"
+                android:layout_height="48sp"
+                android:backgroundTint="#D02D23"
+                android:background="@drawable/button_green"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mua ngay"
+                    android:textSize="16sp"
+                    android:textColor="@color/background" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
