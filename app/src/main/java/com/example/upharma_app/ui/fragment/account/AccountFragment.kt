@@ -28,7 +28,7 @@ class AccountFragment : Fragment() {
     ): View? {
         (activity as AppCompatActivity).supportActionBar?.hide()
 
-        binding= DataBindingUtil.inflate(inflater, R.layout.account_fragment, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.account_fragment, container, false)
         binding.apply {
             lnFamily.setOnClickListener {
                 findNavController().navigate(AccountFragmentDirections.actionNavAccountToRelativeFragment())
@@ -47,7 +47,6 @@ class AccountFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(AccountViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

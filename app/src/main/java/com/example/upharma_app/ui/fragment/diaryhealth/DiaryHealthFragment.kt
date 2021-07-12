@@ -60,7 +60,6 @@ class DiaryHealthFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(DiaryHealthViewModel::class.java)
-        // TODO: Use the ViewModel
     }
 
 }

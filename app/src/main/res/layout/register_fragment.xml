@@ -36,7 +36,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
-        android:layout_marginRight="20sp"
+        android:layout_marginRight="20dp"
+        android:textSize="12sp"
         android:text="Sử dụng để đăng nhập hệ thống"/>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,12 +57,13 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20sp"
         android:layout_marginRight="20sp"
+        android:textSize="12sp"
         android:text="Sau khi đăng ký tài khoản, hệ thống sẽ gửi mật khẩu về địa chỉ email"/>
 
     <Button
         android:layout_marginTop="25sp"
-        android:layout_marginLeft="20sp"
-        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:id="@+id/btLogin"
         android:textAllCaps="false"
         android:textSize="16sp"

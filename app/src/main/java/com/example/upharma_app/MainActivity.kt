@@ -31,12 +31,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_support, R.id.nav_account, R.id.homeFragment, R.id.nav_notify, R.id.noVisiable2 -> {
                     showBottomBar()
                 }else -> {
-                hideBottomBar()
-            }
+                    hideBottomBar()
+                }
             }
         }
         navView.setupWithNavController(navController)
-
     }
 
     private fun hideBottomBar(){

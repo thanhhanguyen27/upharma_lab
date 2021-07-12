@@ -39,34 +39,31 @@ class HomeFragment : Fragment(), MedicineAdapter.OnItemButtonClick {
         binding.recyclerHomevc.apply {
             adapter = medicineAdapter
             layoutManager=LinearLayoutManager(context)
-           // layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
-           // addItemDecoration(EqualSpacingItemDecoration(8, EqualSpacingItemDecoration.HORIZONTAL))
-            }
-
-
-            binding.apply {
-                cardView.setOnClickListener {
-                    findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLiveHealthFragment())
-                }
-                cardView2.setOnClickListener {
-                    findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToDiaryHealthFragment())
-                }
-                cardView3.setOnClickListener {
-                    findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToHealthDeviceFragment())
-                }
-                cardView4.setOnClickListener {
-                    findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToMedicineFragment())
-                }
-            }
-
-
-            return binding.root
         }
+
+
+        binding.apply {
+            cardView.setOnClickListener {
+                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToLiveHealthFragment())
+            }
+            cardView2.setOnClickListener {
+                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToDiaryHealthFragment())
+            }
+            cardView3.setOnClickListener {
+                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToHealthDeviceFragment())
+            }
+            cardView4.setOnClickListener {
+                findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToMedicineFragment())
+            }
+        }
+
+
+        return binding.root
+    }
 
         override fun onActivityCreated(savedInstanceState: Bundle?) {
             super.onActivityCreated(savedInstanceState)
             viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-            // TODO: Use the ViewModel
         }
 
         override fun onItemClick(medicine: ProductInfo) {

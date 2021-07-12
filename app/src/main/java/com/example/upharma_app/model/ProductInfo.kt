@@ -3,46 +3,39 @@ package com.example.upharma_app.model
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
-class ProductInfo:Serializable {
+class ProductInfo (
     @SerializedName("ProductID")
-    var ProductID: String=""
+    var productID: String="",
     @SerializedName("ProductName")
-    var ProductName:String=""
+    var productName:String="",
     @SerializedName("UnitOfMeasure")
-    var UnitOfMeasure:String=""
+    var unitOfMeasure:String="",
     @SerializedName("StorageCondition")
-    var StorageCondition:String=""
+    var storageCondition:String="",
     @SerializedName("ManufacturerName")
-    var ManufacturerName:String=""
+    var manufacturerName:String="",
     @SerializedName("Distributor")
-    var Distributor:String=""
+    var distributor:String="",
     @SerializedName("Description")
-    var Description:String=""
-
+    var description:String="",
     @SerializedName("ProductType")
-    var ProductType:String=""
+    var productType:String="",
     @SerializedName("BarCode")
-    var BarCode:String=""
+    var barCode:String="",
     @SerializedName("RegistrationNumber")
-    var RegistrationNumber:String=""
+    var registrationNumber:String="",
     @SerializedName("DosageForm")
-    var DosageForm:String=""
+    var dosageForm:String="",
     @SerializedName("PharmacologicalType")
-    var PharmacologicalType:String=""
+    var pharmacologicalType:String="",
     @SerializedName("RegisterType")
-    var RegisterType:String=""
+    var registerType:String="",
     @SerializedName("BodyOrgan")
-    var BodyOrgan:String=""
+    var bodyOrgan:String="",
     @SerializedName("OtherType")
-    var OtherType:String=""
+    var otherType:String="",
     @SerializedName("LinkImage")
-    var LinkImage:String=""
+    var linkImage:String="",
     @SerializedName("VAT")
-    var VAT:Int=0
-//    @SerializedName("RegisterType")
-//    var RegisterType:String=""
-//    @SerializedName("RegisterType")
-//    var RegisterType:String=""
-//    @SerializedName("RegisterType")
-//    var RegisterType:String=""
-}
+    var vat:Int=0
+): Serializable
